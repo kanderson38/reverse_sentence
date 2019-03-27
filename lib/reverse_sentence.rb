@@ -1,6 +1,8 @@
 # A method to reverse the words in a sentence, in place.
-# Time complexity: O(n^2), where O is the length of the string
-# Space complexity: O(1)
+# Time complexity: O(n^2), where O is the length of the string. The reverse_sentence method (O(n)) calls the shift_left method (O(n)) once for each character in the string.
+
+# Space complexity: O(1). There is a single variable used to hold the character at each position in the string, and all changes to the original string are made in place.
+
 def reverse_sentence(my_sentence)
   if my_sentence == nil
     return nil
